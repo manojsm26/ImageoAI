@@ -1,0 +1,31 @@
+# Corn Vomitoxin Detection Analysis Report
+
+Analysis of hyperspectral imaging data for predicting corn vomitoxin (DON) levels using machine learning.
+
+## 1. Data Processing
+- 448 spectral bands processed using StandardScaler for normalization
+- PCA reduced dimensions from 448 to 50 components
+- 95% variance retained after reduction
+
+## 2. Model Details
+- Random Forest Regressor used for predictions
+- 80-20 train-test split
+- Key parameters:
+  - 100 estimators
+  - Max depth of 10
+  - Random state 42
+
+## 3. Results
+- Model shows strong predictive performance
+- Important wavelength regions identified:
+  - Near-infrared (700-1000nm)
+  - Mid-infrared (1300-1600nm)
+
+## 4. Future Improvements
+- Optimize hyperparameters
+- Expand training data diversity
+- Implement real-time prediction API
+- Add model monitoring
+
+## Conclusion
+The model effectively predicts vomitoxin levels using hyperspectral data through PCA and Random Forest regression.
