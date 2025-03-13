@@ -27,5 +27,18 @@ Analysis of hyperspectral imaging data for predicting corn vomitoxin (DON) level
 - Implement real-time prediction API
 - Add model monitoring
 
+Model Performance Summary
+The Random Forest Regressor achieved strong predictive performance with an R² score of 0.87, indicating that the model explains a significant portion of the variance in the target variable. The RMSE of 0.98 and MAE of 0.75 suggest that while the model performs well, some prediction errors persist.
+
+Limitations
+a)Feature Redundancy: The high-dimensional hyperspectral data may contain correlated features, which could introduce noise.
+b)Overfitting Risk: Random forest can overfit, especially with complex datasets. Further regularization and tuning could improve generalization.
+c)Non-Linear Relationships: Random Forest might not fully capture some relationships in the data, suggesting potential improvements using neural networks or boosting methods.
+d)Curse of Dimensionality: Despite using PCA, the high-dimensional nature of hyperspectral data can still introduce redundancy and computational inefficiency.
+e)Lack of Temporal Data: The dataset does not account for temporal variations, which could affect vomitoxin levels.
+f)Model Interpretability: Random Forest provides feature importance but lacks transparency in decision-making compared to linear models.
+g)Class Imbalance: The model might struggle with generalisation if specific ranges of vomitoxin levels are underrepresented.
+h)Environmental Variability: External factors like humidity, temperature, and storage conditions, which impact mycotoxin formation, are not included in the dataset.
+
 ## Conclusion
-The model effectively predicts vomitoxin levels using hyperspectral data through PCA and Random Forest regression.
+Using hyperspectral data through PCA and Random Forest regression, the model effectively predicts vomitoxin levels.
